@@ -1,0 +1,4 @@
+#!/bin/bash
+if [ ! -d $HOME/Desktop/RMME ]; then
+	cp -r $HOME/Desktop/PicoShell/RMME $HOME/Desktop/RMME
+fi

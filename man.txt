@@ -1,0 +1,20 @@
+indice : est une commande du picoshell permettant d'obtenir un indice supplementaire vous coutant ainsi des points de scores.
+
+status : est une commande qui affiche le status actuelle de votre evolution dans l'escape game.
+
+key : est une commande pour executee la verifications d'une cle/mot-de-passe secret et retourne forcement un indice quand elles est vrai et une erreur . 
+
+SECTION DU MANUEL
+      La section standard du manuel comporte les fonctions:
+
+       1      indice
+
+       2      status
+
+       3      key
+
+       4      man
+
+       5      (nyancat)
+
+       Les distributions personnalisent la section du manuel selon leurs specificites, qui incluent souvent des sections supplementaires.

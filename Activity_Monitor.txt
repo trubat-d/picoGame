@@ -1,0 +1,14 @@
+awfgshdjh,kjhlkg,hjmnxgfbxx sghn
+adfgbhfnjg
+fdxnhjml;j.,j
+     indice -- struct permettant de renvoyer un 'hint' et d'en stocker le nombre d'apelle
+
+LIBRARY
+     Standard Picoshell Library (picoshell, -pi)
+
+SYNOPSIS
+     include <picoshell.h>
+
+     t_indice
+     indice(int input)
+cmgnxfgbdzf

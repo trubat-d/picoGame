@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ ! -e $HOME/Desktop/WELCOME/Activity_Monitor.txt ]; then
+	cp $HOME/Desktop/PicoShell/Activity_Monitor.txt $HOME/Desktop/WELCOME
+fi
+
+if [ ! -e $HOME/Desktop/WELCOME/Bocal.pdf ]; then
+	cp $HOME/Desktop/PicoShell/Bocal.pdf $HOME/Desktop/WELCOME
+fi
