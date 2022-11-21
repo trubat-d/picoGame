@@ -6,7 +6,7 @@
 /*   By: hrolle <hrolle@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/20 02:38:02 by hrolle            #+#    #+#             */
-/*   Updated: 2022/11/20 20:57:20 by hrolle           ###   ########.fr       */
+/*   Updated: 2022/11/21 18:35:11 by trubat-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ void	man_exec(char **ss)
 int	level_up(int key)
 {
 	DATA *data = get_data(NULL);
-	if(data->level == key - 1)
+	if (data->level == key - 1)
 	{
 		data->level++;
 		data->level_hint_stat = 0;
@@ -95,8 +95,8 @@ int	key_value(char **av)
 
 void	key(char **av)
 {
-	int pid;
-	int key_val;
+	int			pid;
+	int			key_val;
 	unsigned	ac = ft_sstrlen(av);
 	
 	if (ac < 2)
@@ -131,9 +131,8 @@ void	key(char **av)
 		}
 		else if (key_val == 3)
 		{
-			if(level_up(key_val))
+			if (level_up(key_val))
 			{
-
 				pid = fork();
 				if (pid == -1)
 					return ;
@@ -149,7 +148,7 @@ void	key(char **av)
 		}
 		else if (key_val == 4)
 		{
-			if(level_up(key_val))
+			if (level_up(key_val))
 			{
 				ft_printfd(1, "\nSauve le cannard de 42 ! Entre fr33_th3_duck dans PicoShell !!!\n\n");
 			}
@@ -201,8 +200,8 @@ void	print_score(void)
 
 	get_time_score();
 	show_elapse_time();
-	ft_printfd(1, "Global Score : %u\n", get_global_score());
-	ft_printfd(1, "Level Reached : %u\n", data->level);
+	ft_printfd(1, "\033[38;5;208m°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸ Global Score : %u `°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸#0\n\n", get_global_score());
+	ft_printfd(1, "\033[38;5;208m°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸ Level Reached : %u `°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø.#0\n\n", data->level);
 }
 
 void	print_victory(char **ss)
@@ -307,11 +306,11 @@ int	main(int ac, char **av, char **env)
 	data.level_hint_stat = 0;
 	data.max_used_hints = 0;
 	data.time_score = 0;
-	data.hint_score = 1800000;
+	data.hint_score = 5600000;
 	get_data(&data);
 	gen_timer();
 	data.level = 0;
-	// fallout();
+	fallout();
 	ft_printfd(1, "Your start key :\n#k%s#0\n", KEY_1);
 	while (1)
 	{

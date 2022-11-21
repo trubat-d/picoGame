@@ -1,10 +1,11 @@
 #ifndef PICO_SHELL_H
 # define PICO_SHELL_H
 
-# define KEY_1 "1"//"%yO01*$kla79)(;{FLAGS}"
-# define KEY_2 "2"//"c1r13s2"
-# define KEY_3 "3"//"student_key"
-# define KEY_4 "4"//"remove_me"
+# define KEY_1 "%yO01*$kla79)(;{FLAGS}"//"%yO01*$kla79)(;{FLAGS}"
+# define KEY_2 "c1r13s2"//"c1r13s2"
+# define KEY_3 "piscine"//"student_key"
+# define KEY_4 "SL@GOON"//"remove_me"
+# define PLAY_TIME 60
 # include "../printfd/HEADER/ft_printfd.h"
 # include "man.h"
 # include "get_next_line.h"

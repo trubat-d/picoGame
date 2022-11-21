@@ -34,25 +34,25 @@ char	*hint(int level, int num)
 			switch (num)
 			{
 				case 0:
-					return ("Hint 1 for level : 1");
+					return ("Parfois, des changement arrivent dans les dossiers !");
 				case 1:
-					return ("Hint 2 for level : 1");
+					return ("L'extension d'un fichier pourrait changer la donne ?");
 			}
 		case 2:
 			switch (num)
 			{
 				case 0:
-					return ("Hint 1 for level : 2");
+					return ("Oui tu as bien compris, lève toi !");
 				case 1:
-					return ("Hint 2 for level : 2");
-				case 2:
-					return ("Hint 3 for level : 2");
+					return ("Serieusement ! le staff est a ton service pour te répondre!");
 			}
 		case 3:
 			switch (num)
 			{
 				case 0:
-					return ("Hint 1 for level : 3");
+					return ("Des fichiers t'attendent dans un dossier !");
+				case 1:
+					return ("'Remove me' signifie litteralement : 'Retire moi'");
 			}
 	}
 	return (0);
@@ -63,6 +63,6 @@ void	get_hint(void)
 	DATA *data = get_data(NULL);
 	if (data->level < 1 || data->level > 3)
 		return ;
-	ft_printfd(1, "Your hint : [%s]\n", hint(data->level, data->level_hint_stat));
+	ft_printfd(1, "Votre indice : [#g%s#0]\n", hint(data->level, data->level_hint_stat));
 	adjust_level_hint(data);
 }

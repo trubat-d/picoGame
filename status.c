@@ -18,18 +18,14 @@ void get_status(void)
 void	get_hint_score(void)
 {
 	DATA *data = get_data(NULL);
-	data->hint_score -= data->max_used_hints * 300000;
-	//DEBUG
-	printf("DEBUG -----> Score Hint : %u\n", data->hint_score);
+	data->hint_score -= data->max_used_hints * 1200000;
 }
 
 void	get_time_score(void)
 {
 	DATA *data = get_data(NULL);
 
-	data->time_score += (60 * 20  - get_elapse_time()) * 3000;
-	//DEBUG
-	ft_printfd(1, "DEBUG -----> Score TIME : %u\n", data->time_score);
+	data->time_score += (60 * PLAY_TIME - get_elapse_time()) * 3000;
 }
 
 unsigned long get_global_score(void)

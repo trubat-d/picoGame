@@ -37,7 +37,7 @@ void	show_elapse_time(void)
 {
 	unsigned long timer = get_elapse_time();
 	if(timer / 60 >= 1)
-		ft_printfd(1, "#yTime since start : %u minutes and %u seconds\n", timer/60, timer % 60);
+		ft_printfd(1, "\033[38;5;208m°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸ Time since start : %u minutes and %u seconds `°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸#0\n\n", timer/60, timer % 60);
 	else
-		ft_printfd(1, "#yTime since start : %u seconds\n", timer % 60);
+		ft_printfd(1, "\033[38;5;208m°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸Time since start : %u seconds `°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸#0\n\n", timer % 60);
 }
